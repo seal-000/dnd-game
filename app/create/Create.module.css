@@ -1,0 +1,12 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: aliceblue;
+    font-family:  var(--gray-alpha-100);
+    line-height: 34px;
+    font-size: 20px;
+    
+}

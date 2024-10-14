@@ -1,0 +1,94 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+}
+
+.form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+.formGroup {
+    margin-bottom: 15px;
+    
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    border-color: #f30000;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.primaryButton {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.primaryButton:hover {
+    background-color: #005bb5;
+}
+  
+.secondaryButton {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.secondaryButton:hover {
+    background-color: #e0e0e0;
+}
+
+.profileImage {
+    width: 200px; /* Set the width to 36 pixels */
+    height: 200px; /* Set the height to 36 pixels */
+    border-radius: 50%; /* Optional: to make it circular */
+    overflow: hidden; /* Ensure content is not visible outside */
+    margin: 20px 20px 20px 60px;
+  }
+  
+  .profileImage img {
+    width: 100%; /* Make the image cover the entire area */
+    height: 100%; /* Ensure the image fits */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  
+ .uploadButton {
+    display: inline;
+ }
