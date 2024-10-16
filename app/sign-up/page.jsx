@@ -93,7 +93,7 @@ const SignUp = () => {
 
         <p>
           
-          To read a summary about this project click here: <a href="readMeLink" className={styles.readMeLink}>READ.ME</a>
+          To read a summary about this project click here: <a href="https://github.com/seal-000/dnd-game/tree/main" className={styles.readMeLink}>READ.ME</a>
 
 
         </p>
