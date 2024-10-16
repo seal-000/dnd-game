@@ -32,15 +32,16 @@ export default function Home() {
             <Sidebar />
           </Grid>
 
-          {/* Main Dashboard Section */}
+         
           
       </Grid>
-          
+      
+          {/* Main Dashboard Section */}
       <Grid item xs={9} padding={'120px'}>
           
             <img 
                 src="https://logos-world.net/wp-content/uploads/2021/12/DnD-Logo.png"
-                className={styles.responsiveImage} // Use CSS for responsiveness
+                className={styles.responsiveImage} 
                 alt="DnD Logo" 
             />
 

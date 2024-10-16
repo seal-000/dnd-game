@@ -1,0 +1,93 @@
+.container{
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    
+}
+
+.gallery {
+   padding-top: 20px;
+   color: aliceblue;
+   
+}
+
+.shuffle-container{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*flex-direction: column;*/
+    align-items: center; 
+    /*padding: 20px; */
+    gap: 20px;
+
+}
+
+.no-characters-message{
+
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.custom-label{
+
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+/*
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+        
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+.card-animation {
+    opacity: 0; 
+    animation: fadeIn ease 3s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+*/
+
+@keyframes growIn {
+    0% {
+        transform: scale(0); 
+        opacity: 0; 
+    }
+    100% {
+        transform: scale(1); 
+        opacity: 1; 
+    }
+}
+
+.card-animation {
+    opacity: 0; 
+    animation: growIn ease 2.5s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+
+.header {
+    text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+    .shuffle-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .shuffle-container {
+        grid-template-columns: 1fr; /* One column for mobile screens */
+    }
+}
+

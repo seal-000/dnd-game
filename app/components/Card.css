@@ -25,8 +25,8 @@
   /*Mobile size*/
   @media (max-width: 480px) {
     .card {
-      width: 260px; /* Adjust width for mobile-sized screens */
-      font-size: 0.8rem; /* Even smaller font size */
+      width: 260px; 
+      font-size: 0.8rem; 
     }
   }
   
@@ -109,17 +109,17 @@
   background-color: #9D0208;
 }
 
-/*
+
 @font-face{
   font-family: "Vanilla";
-  src: url("../../fonts/VanillaDreamers-9Y7pK.otf");
+  src: url("../fonts/VanillaDreamers-9Y7pK.otf");
 }
 
 .Vanilla{
   font-family: "Vanilla";
   color: black;
 }
-*/
+
 
 .button-edit-character{
 
@@ -145,8 +145,8 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Pushes the buttons to the bottom */
-  height: 100%; /* Ensures the container takes up full height */
+  justify-content: flex-end; 
+  height: 100%; 
   margin: 20px 20px 20px 20px;
   padding-bottom: 20px;
   gap: 20px;
@@ -182,11 +182,11 @@
 
 /* styles.css */
 .user-item-button {
-  border: 2px solid black; /* Set border color and width */
-  border-radius: 25px; /* Set border radius */
-  padding-left: 16px; /* Default padding (adjust if needed) */
-  padding-right: 16px; /* Default padding (adjust if needed) */
-  justify-content: center; /* Center alignment when drawer is closed */
+  border: 2px solid black; 
+  border-radius: 25px; 
+  padding-left: 16px; 
+  padding-right: 16px; 
+  justify-content: center; 
   margin: 4px 4px 4px 4px;
 }
 
@@ -197,3 +197,20 @@
   border: none;
 }
 */
+
+.text-input {
+  background-color: #fff;
+  color: #000;
+  padding: 12px; 
+  font-size: 16px;
+  height: 40px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  width: 100%; 
+  margin-left: 4px;
+}
+
+.input-container-name {
+  display: flex;
+  color: #000;
+}

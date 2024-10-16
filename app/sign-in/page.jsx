@@ -14,6 +14,12 @@ const SignIn = () => {
   const router = useRouter()
 
   const handleSignIn = async () => {
+
+    if (!email || !password) {
+      window.alert("Please enter both email and password.");
+      return;
+    }
+
     try {
         const res = await signInWithEmailAndPassword(email, password);
         console.log({res});

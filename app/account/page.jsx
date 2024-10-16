@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { auth, db, storage } from '@/app/firebase/config'; // Make sure to import your Firebase config
+import { auth, db, storage } from '@/app/firebase/config'; 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { useRouter } from 'next/navigation';
@@ -59,7 +59,7 @@ export default function Account() {
 
       if (image) {
 
-        const imageRef = ref(storage, `profileImages/${user.uid}`); // Create a reference for the image
+        const imageRef = ref(storage, `profileImages/${user.uid}`); // reference for the image
         await uploadBytes(imageRef, image); // Upload the image
         const downloadURL = await getDownloadURL(imageRef); // Get the download URL
         await setDoc(doc(db, 'profiles', user.uid), { imageUrl: downloadURL }, { merge: true }); // Update the profile with the image URL

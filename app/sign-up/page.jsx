@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from '@/app/firebase/config';
-import styles from './SignUp.module.css'; // Import the CSS module
+import styles from './SignUp.module.css';
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
@@ -12,13 +12,13 @@ const SignUp = () => {
   const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(auth);
   const router = useRouter();
 
-  //HERE 
+   
   const validatePassword = (password) => {
     const passwordRegex = /^(?=.*[A-Z]).{7,}$/; // At least 7 characters, one uppercase letter
     return passwordRegex.test(password);
   };
 
-  //HERE
+  
   const alertMessages = [
     "User already exists",
     "Password must be at least 7 characters long and contain one uppercase letter"
@@ -49,7 +49,7 @@ const SignUp = () => {
       setEmail('');
       setPassword('');
 
-      //HERE 
+       
       router.push('/account');
 
     } catch (e) {
@@ -87,9 +87,20 @@ const SignUp = () => {
           <Link href="/sign-in" className={styles.link}>Sign In</Link>
         </p>
 
-
-
       </div>
+
+      <div className={styles.readMe}>
+
+        <p>
+          
+          To read a summary about this project click here: <a href="readMeLink" className={styles.readMeLink}>READ.ME</a>
+
+
+        </p>
+
+        
+      </div>
+      
     </div>
   );
 };

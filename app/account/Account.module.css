@@ -13,6 +13,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    color: black;
     
 }
 
@@ -76,17 +77,17 @@
 }
 
 .profileImage {
-    width: 200px; /* Set the width to 36 pixels */
-    height: 200px; /* Set the height to 36 pixels */
-    border-radius: 50%; /* Optional: to make it circular */
-    overflow: hidden; /* Ensure content is not visible outside */
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    overflow: hidden;
     margin: 20px 20px 20px 60px;
   }
   
   .profileImage img {
-    width: 100%; /* Make the image cover the entire area */
-    height: 100%; /* Ensure the image fits */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
   }
   
  .uploadButton {

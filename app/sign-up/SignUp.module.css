@@ -1,9 +1,10 @@
-.container {
+  .container {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #1a1a1a;
+    flex-direction: column;
   }
   
   .card {
@@ -39,7 +40,7 @@
   .button {
     width: 100%;
     padding: 0.75rem;
-    background-color: #6366f1;
+    background-color: #D00000;
     color: white;
     border-radius: 0.25rem;
     border: none;
@@ -49,7 +50,7 @@
   }
   
   .button:hover {
-    background-color: #4f46e5;
+    background-color: #9D0208;
   }
   
   
@@ -68,4 +69,24 @@
     color: rgb(199, 199, 232);
     text-decoration: underline;
     cursor: pointer;
+  }
+
+  .readMe {
+
+    padding-top: 20px;
+    color: #f7f1f1;
+    margin: 20px;
+    font-size: 1.2rem;
+  }
+
+  .readMeLink {
+
+    text-decoration: underline;
+   
+  }
+  
+  .readMeLink:hover {
+
+    color: blue; 
+    
   }

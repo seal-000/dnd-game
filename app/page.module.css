@@ -11,23 +11,22 @@
   
 }
 
-/* Define a class for the responsive image */
 .responsiveImage {
-  width: 100%;         /* Default to full width */
+  width: 100%;        
   height: auto;
-  padding-bottom: 20px;        /* Maintain aspect ratio */
+  padding-bottom: 20px;        
 }
 
-/* Media query for larger screens */
+/* larger screens */
 @media (min-width: 600px) {
   .responsiveImage {
-    width: 500px;      /* Set a fixed width for larger screens */
+    width: 500px;      
   }
 }
 
-/* Media query for smaller screens */
+/* smaller screens */
 @media (max-width: 599px) {
   .responsiveImage {
-    width: 200px;      /* Smaller width for mobile devices */
+    width: 200px;      
   }
 }

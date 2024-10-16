@@ -28,7 +28,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import PersonIcon from '@mui/icons-material/Person';
 import CommentIcon from '@mui/icons-material/Comment';
 
-import { auth, db, storage } from '@/app/firebase/config'; // Make sure to import your Firebase config
+import { auth, db, storage } from '@/app/firebase/config'; 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 
@@ -42,6 +42,7 @@ const openedMixin = (theme) => ({
     duration: theme.transitions.duration.enteringScreen,
   }),
   overflowX: 'hidden',
+  backgroundColor: '#2E2A2A',
 });
 
 const closedMixin = (theme) => ({
@@ -54,6 +55,8 @@ const closedMixin = (theme) => ({
   [theme.breakpoints.up('sm')]: {
     width: `calc(${theme.spacing(8)} + 1px)`,
   },
+
+  backgroundColor: '#262424',
 });
 
 const DrawerHeader = styled('div')(({ theme }) => ({
@@ -96,12 +99,12 @@ export default function Sidebar() {
     if (user) {
       const fetchUserProfileImage = async () => {
         try {
-          const userDocRef = doc(db, 'profiles', user.uid); // Assuming 'profiles' is the collection name
+          const userDocRef = doc(db, 'profiles', user.uid); //'profiles' is the collection name
           const userDoc = await getDoc(userDocRef);
 
           if (userDoc.exists()) {
             const userData = userDoc.data();
-            setImageUrl(userData.imageUrl); // Adjust based on your Firestore data structure
+            setImageUrl(userData.imageUrl); 
           } else {
             console.log('No such document!');
           }
@@ -134,6 +137,7 @@ export default function Sidebar() {
                     minHeight: 48,
                     justifyContent: drawerOpen ? 'initial' : 'center',
                     px: 2.5,
+                    color: 'aliceblue', 
                 }}
                 >
                 <ListItemIcon
@@ -141,6 +145,7 @@ export default function Sidebar() {
                     minWidth: 0,
                     mr: drawerOpen ? 3 : 'auto',
                     justifyContent: 'center',
+                    color: 'aliceblue', 
                     }}
                 >
                     <HomeIcon />
@@ -158,6 +163,7 @@ export default function Sidebar() {
                     minHeight: 48,
                     justifyContent: drawerOpen ? 'initial' : 'center',
                     px: 2.5,
+                    color: 'aliceblue', 
                 }}
                 >
                 <ListItemIcon
@@ -165,6 +171,7 @@ export default function Sidebar() {
                     minWidth: 0,
                     mr: drawerOpen ? 3 : 'auto',
                     justifyContent: 'center',
+                    color: 'aliceblue', 
                     }}
                 >
                     <CreateIcon />
@@ -182,6 +189,7 @@ export default function Sidebar() {
                     minHeight: 48,
                     justifyContent: drawerOpen ? 'initial' : 'center',
                     px: 2.5,
+                    color: 'aliceblue', 
                 }}
                 >
                 <ListItemIcon
@@ -189,6 +197,7 @@ export default function Sidebar() {
                     minWidth: 0,
                     mr: drawerOpen ? 3 : 'auto',
                     justifyContent: 'center',
+                    color: 'aliceblue', 
                     }}
                 >
                     <CollectionsIcon />
@@ -197,33 +206,10 @@ export default function Sidebar() {
                 </ListItemButton>
             </Link>
             </ListItem>
-    
-            {/* Comments */}
-            <ListItem disablePadding sx={{ display: 'block' }}>
-            <Link href="/comments" passHref>
-                <ListItemButton
-                sx={{
-                    minHeight: 48,
-                    justifyContent: drawerOpen ? 'initial' : 'center',
-                    px: 2.5,
-                }}
-                >
-                <ListItemIcon
-                    sx={{
-                    minWidth: 0,
-                    mr: drawerOpen ? 3 : 'auto',
-                    justifyContent: 'center',
-                    }}
-                >
-                    <CommentIcon />
-                </ListItemIcon>
-                <ListItemText primary="Comments" sx={{ opacity: drawerOpen ? 1 : 0 }} />
-                </ListItemButton>
-            </Link>
-            </ListItem>
+  
       </List>
       
-      <div className="user-item"> {/* Add custom class here */}
+      <div className="user-item"> 
         <ListItem disablePadding sx={{ display: 'block' }}>
             <Link href="/account" passHref>
             <ListItemButton
@@ -232,6 +218,7 @@ export default function Sidebar() {
                 minHeight: 48,
                 justifyContent: drawerOpen ? 'initial' : 'center',
                 px: 2.5,
+                color: 'aliceblue', 
                 }}
             >
                 <ListItemIcon
@@ -245,7 +232,7 @@ export default function Sidebar() {
                     <Avatar 
                     alt="User Avatar" 
                     src={imageUrl}
-                    sx={{ width: 36, height: 36 }} // Adjust the size of the avatar here
+                    sx={{ width: 48, height: 48 }} 
                     />
 
                 </ListItemIcon>
