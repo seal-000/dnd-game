@@ -22,7 +22,15 @@ A web application that allows users to create, manage, and customize their own D
 You can view the live application [here](https://dnd-game-blush.vercel.app/sign-up).
 
 ### Screenshots
-![Character Creation Page](https://your-screenshot-link.png)
+
+![sign-up](https://github.com/user-attachments/assets/2925eccd-c0b6-49ba-88e6-3aaa027cd228)
+
+![sign-in](https://github.com/user-attachments/assets/ac22fd44-28c0-4f22-b3ff-ab53ec3431d7)
+
+<img src= 'https://github.com/user-attachments/assets/5bde89b2-e94f-4b1e-adfa-c4229175a4a2)' alt="sign-in" width="400"/>
+
+![gallery](https://github.com/user-attachments/assets/5bde89b2-e94f-4b1e-adfa-c4229175a4a2)
+
 
 ## Tech Stack
 - **Next.js**: Server-side rendering and static site generation.
@@ -36,7 +44,7 @@ To get a local copy up and running, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-project.git
+   git clone https://github.com/seal-000/dnd-game.git 
 
 
 ## **Usage**
