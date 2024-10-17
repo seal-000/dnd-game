@@ -1,5 +1,5 @@
 'use client'
-
+import { useEffect } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -13,15 +13,16 @@ import { Box } from '@mui/material';
 export default function Home() {
 
   const [user] = useAuthState(auth);
-
   const router = useRouter()
-  const userSession = sessionStorage.getItem('user');
   //console.log(user)
 
-  if (!user && !userSession){
-    router.push('/sign-up')
-
-  }
+  useEffect(() => {
+    const userSession = sessionStorage.getItem('user');
+    if (!user && !userSession){
+        router.push('/sign-up')
+    
+    }
+  },  [user, router]);
 
   return (
     <div className={styles.container}>

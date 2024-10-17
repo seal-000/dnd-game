@@ -13,12 +13,14 @@ import CreateCard from "../components/CreateCard";
 export default function Create() {
     const [user] = useAuthState(auth);
     const router = useRouter();
-    const userSession = sessionStorage.getItem('user');
-
     
-    if (!user && !userSession) {
-      router.push('/sign-up');
-    }
+    useEffect(() => {
+      const userSession = sessionStorage.getItem('user');
+      if (!user && !userSession){
+          router.push('/sign-up')
+      
+      }
+    },  [user, router]);
    
 
     return (
