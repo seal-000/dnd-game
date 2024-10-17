@@ -27,9 +27,8 @@ You can view the live application [here](https://dnd-game-blush.vercel.app/sign-
 
 ![sign-in](https://github.com/user-attachments/assets/ac22fd44-28c0-4f22-b3ff-ab53ec3431d7)
 
-<img src= 'https://github.com/user-attachments/assets/5bde89b2-e94f-4b1e-adfa-c4229175a4a2)' alt="sign-in" width="400"/>
+<img src="https://github.com/user-attachments/assets/5bde89b2-e94f-4b1e-adfa-c4229175a4a2" alt="sign-in" width="800"/>
 
-![gallery](https://github.com/user-attachments/assets/5bde89b2-e94f-4b1e-adfa-c4229175a4a2)
 
 
 ## Tech Stack
