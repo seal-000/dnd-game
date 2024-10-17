@@ -29,7 +29,7 @@ You can view the live application [here](https://dnd-game-blush.vercel.app/sign-
 
 <img src="https://github.com/user-attachments/assets/5bde89b2-e94f-4b1e-adfa-c4229175a4a2" alt="sign-in" width="800"/>
 
-
+![account](https://github.com/user-attachments/assets/8e9226a5-1a4d-404c-87f8-2e84d6b6144b)
 
 ## Tech Stack
 - **Next.js**: Server-side rendering and static site generation.
