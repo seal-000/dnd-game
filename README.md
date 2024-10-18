@@ -23,13 +23,29 @@ You can view the live application [here](https://dnd-game-blush.vercel.app/sign-
 
 ### Screenshots
 
-![sign-up](https://github.com/user-attachments/assets/2925eccd-c0b6-49ba-88e6-3aaa027cd228)
 
-![sign-in](https://github.com/user-attachments/assets/ac22fd44-28c0-4f22-b3ff-ab53ec3431d7)
+<table>
+  <tr>
+    <td>
+      <h4>Sign Up</h4>
+      <img src="https://github.com/user-attachments/assets/2925eccd-c0b6-49ba-88e6-3aaa027cd228" alt="Image 1" width="600"/>
+    </td>
+    <td>
+      <h4>Sign In</h4>
+      <img src="https://github.com/user-attachments/assets/ac22fd44-28c0-4f22-b3ff-ab53ec3431d7" alt="Image 2" width="600"/>
+    </td>
+  </tr>
+</table>
+
+
+
 
 <img src="https://github.com/user-attachments/assets/5bde89b2-e94f-4b1e-adfa-c4229175a4a2" alt="sign-in" width="800"/>
 
-![account](https://github.com/user-attachments/assets/8e9226a5-1a4d-404c-87f8-2e84d6b6144b)
+
+
+![Screenshot 2024-10-17 170720](https://github.com/user-attachments/assets/ca2aa271-05d5-43c0-898a-1ea72ebbbfd4)
+
 
 ## Tech Stack
 - **Next.js**: Server-side rendering and static site generation.
