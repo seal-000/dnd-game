@@ -1,6 +1,6 @@
 # D&D Character Creator
 
-A web application that allows users to create, manage, and customize their own Dungeons & Dragons characters, with real-time profile updates and image uploads. Built using Next.js and Firebase.
+A web application that allows users to create, manage, and customize their own Dungeons & Dragons characters, with real-time profile updates and image uploads. Built using Next.js (powered by React and Node.js) and Firebase.
 
 ## Table of Contents
 1. [Features](#features)
@@ -17,6 +17,8 @@ A web application that allows users to create, manage, and customize their own D
 - Upload profile images.
 - Responsive design using Material-UI.
 - Secure user authentication via Firebase.
+- Password reset functionality for user accounts.
+
 
 ## Demo
 You can view the live application [here](https://dnd-game-blush.vercel.app/sign-up).
@@ -40,7 +42,7 @@ You can view the live application [here](https://dnd-game-blush.vercel.app/sign-
 
 
 #### Gallery 
-<img src="https://github.com/user-attachments/assets/5bde89b2-e94f-4b1e-adfa-c4229175a4a2" alt="sign-in" width="800"/>
+<img src="https://github.com/user-attachments/assets/5bde89b2-e94f-4b1e-adfa-c4229175a4a2" alt="sign-in" width="770"/>
 
 
 #### Profile
@@ -67,15 +69,16 @@ To get a local copy up and running, follow these steps:
 
 
 ## **Usage**
-Explain how to use the project, especially if it has complex features or user flows.
 
 **Example:**
 ```markdown
 ## Usage
-1. Sign up or log in with your email to create a new account.
-2. Navigate to the **Create Character** page to start customizing your character.
-3. Upload a profile image and save your character.
-4. Manage or edit characters from the **My Characters** page.
+1. Sign up or log in with your email.
+2. If you just sign up, create a username and upload a profile image for your account.
+3. Navigate to the **Create Character** page to start customizing your character.
+4. Choose an image and save your character.
+5. Manage or edit characters from the **Gallery** page.
+6. You can log out from your **Account**
 
 ```
 
