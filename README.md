@@ -39,12 +39,16 @@ You can view the live application [here](https://dnd-game-blush.vercel.app/sign-
 
 
 
-
+#### Gallery 
 <img src="https://github.com/user-attachments/assets/5bde89b2-e94f-4b1e-adfa-c4229175a4a2" alt="sign-in" width="800"/>
 
 
+#### Profile
+<img src="https://github.com/user-attachments/assets/ca2aa271-05d5-43c0-898a-1ea72ebbbfd4" width=400>
 
-![Screenshot 2024-10-17 170720](https://github.com/user-attachments/assets/ca2aa271-05d5-43c0-898a-1ea72ebbbfd4)
+#### Create Character
+![creating](https://github.com/user-attachments/assets/78385426-17d8-4bd7-a834-66c22a7bd8a8)
+
 
 
 ## Tech Stack
