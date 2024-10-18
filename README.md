@@ -90,6 +90,12 @@ Contributions are welcome! Feel free to open an issue or submit a pull request. 
 5. Open a pull request.
 
 
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+
+
 
 
 
